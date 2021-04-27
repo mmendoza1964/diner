@@ -17,7 +17,10 @@ $f3->route('GET /', function () {
     //Display the home page
     $view = new Template();
     echo $view->render('views/home.html');
+});
 
+$f3->route('GET /breakfast', function () {
+    echo "<h2>What's for Breakfast?</h2>";
 });
 
 //Run Fat-Free
